@@ -31,7 +31,7 @@ def predict():
 		print(e)
 	
 	# print(predictions)
-	return render_template('webpage.html', pred="Expected value will be: {:.2f} gms".format(float(predictions[0])))
+	return render_template('webpage.html', pred="Expected weight would be: {:.2f} gms".format(float(predictions[0])))
 
 
 if __name__ == '__main__':
