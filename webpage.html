@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+form {
+    margin: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.result {
+    margin: auto;
+    width: 20%;
+height: 20%;
+    border: 1px solid #ccc;
+}
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Predictifier</title>
+	<link type="text/css" rel="stylesheet" href="/static/./style.css">
+
+</head>
+
+<body style="size:1040px;height:960px;background:url('https://c4.wallpaperflare.com/wallpaper/729/59/830/bubbles-goldfish-blue-bokeh-sea-fish-fishes-underwater-water-gold-desktop-wallpaper-preview.jpg') no-repeat; background-size: cover">
+
+
+	<h1>Predicting and Classifying Fish</h1>
+     <!-- Form to enter new data for predictions  -->	
+	<form action="/predict"method="POST">
+      <input type="text" name="LengthVer" placeholder="Vertical Length" required="required" /><br>
+    	<input type="text" name="LengthDia" placeholder="Diagonal Length" required="required" /><br>
+        <input type="text" name="LengthCro" placeholder="Cross Length" required="required" /><br>
+        <input type="text" name="Height" placeholder="Height" required="required" /><br>
+        <input type="text" name="Width" placeholder="Width" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large"><bold>Predict</bold></button>
+    </form>
+
+   <br>
+   <br>
+
+<h1>{{pred}}</h1>	
+ </div>
+
+
+</body>
+</html>
